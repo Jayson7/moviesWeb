@@ -1,0 +1,19 @@
+header {
+    width: 100%;
+    background: #045757;
+    height: 50px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: inherit;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 60%;
+}

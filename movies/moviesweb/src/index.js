@@ -2,8 +2,11 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
 import Homepage from "./components/hompage/index";
+import Navbar from "./components/navbar/navbar";
+
 ReactDOM.render(
   <React.StrictMode>
+    <Navbar />
     <Homepage />
   </React.StrictMode>,
   document.getElementById("root")
