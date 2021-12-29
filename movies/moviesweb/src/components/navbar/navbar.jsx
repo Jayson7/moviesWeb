@@ -4,12 +4,12 @@ class Navbar extends Component {
   render() {
     return (
       <div>
+        <div className="topper">
+          <h6>
+            Movies<span>Web</span>
+          </h6>
+        </div>
         <header>
-          <div className="to">
-            <h6>
-              Movies <span>Web</span>{" "}
-            </h6>
-          </div>
           <nav>
             <ul>
               <li>
