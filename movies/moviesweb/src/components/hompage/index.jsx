@@ -36,14 +36,27 @@ class Homepage extends Component {
   render() {
     return (
       <div>
-        <div>
-          {this.state.toprated_results.map((item) => (
-            <div key={item.id}>
-              <div className="card-container">
+        <div className="section1">
+          <div className="top-rated">
+            <h3>Top Rated</h3>
+            <div className="card-container">
+              {this.state.toprated_results.map((item) => (
+                <div className="card" key={item.id}>
+                  <img src="" alt="" />
+                  <div className="card-body">
+                    <h5>Title</h5>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Laudantium suscipit incidunt, dolorem praesentium esse
+                      repudiandae. Quis earum eligendi ducimus cumque.
+                    </p>
+                  </div>
 
-              </div>
+                  <div className="rating">9.0</div>
+                </div>
+              ))}
             </div>
-          ))}
+          </div>
         </div>
       </div>
     );
