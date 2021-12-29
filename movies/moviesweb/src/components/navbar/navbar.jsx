@@ -5,6 +5,11 @@ class Navbar extends Component {
     return (
       <div>
         <header>
+          <div className="to">
+            <h6>
+              Movies <span>Web</span>{" "}
+            </h6>
+          </div>
           <nav>
             <ul>
               <li>
@@ -15,6 +20,9 @@ class Navbar extends Component {
               </li>
               <li>
                 <a href="/"> latest movies </a>
+              </li>
+              <li>
+                <a href="/"> Tv shows </a>
               </li>
             </ul>
             <form method="POST">

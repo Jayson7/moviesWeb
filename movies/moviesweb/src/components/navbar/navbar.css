@@ -17,3 +17,43 @@ ul {
     justify-content: space-around;
     width: 60%;
 }
+
+ul li {
+    list-style-type: none;
+}
+
+li a {
+    color: azure;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+
+form input {
+    border-radius: 9px;
+    border: 0.1 px solid;
+    padding: 5px;
+    background: none;
+    color: azure;
+}
+
+form input:focus {
+    outline: transparent;
+}
+
+form button {
+    padding: 7px;
+    background-color: transparent;
+    font-family: "Ubuntu";
+    margin: 5px;
+    font-weight: 900;
+    color: azure;
+    font-size: 0.8rem;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+form button:hover {
+    background-color: green;
+    transition: background 1s ease-in-out;
+}
