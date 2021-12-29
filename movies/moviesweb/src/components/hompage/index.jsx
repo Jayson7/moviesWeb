@@ -23,7 +23,6 @@ class Homepage extends Component {
     const page = "page=1";
     const top_rated =
       base_url + "/movie/top_rated?" + api_key + "&language=en-US&" + page;
-    const img_base = "https://image.tmdb.org/t/p/w500";
     fetch(top_rated)
       .then((res) => res.json())
       .then((data) => {
@@ -34,6 +33,7 @@ class Homepage extends Component {
       });
   };
   render() {
+    const img_base = "https://image.tmdb.org/t/p/w500";
     return (
       <div>
         <div className="section1">
@@ -42,7 +42,7 @@ class Homepage extends Component {
             <div className="card-container">
               {this.state.toprated_results.map((item) => (
                 <div className="card" key={item.id}>
-                  <img src="" alt="" />
+                  <img src={`${img_base}/${item.poster_path}`} alt="" />
                   <div className="card-body">
                     <h5>Title</h5>
                     <p>
