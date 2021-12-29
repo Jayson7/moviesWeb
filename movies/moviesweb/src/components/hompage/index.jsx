@@ -26,14 +26,20 @@ class Homepage extends Component {
     fetch(top_rated)
       .then((res) => res.json())
       .then((data) => {
-        this.setState({ top_rated: data });
-        console.log(this.state.top_rated);
+        this.setState({ topRatedList: data });
+        console.log(this.state.topRatedList);
       });
   };
   render() {
     return (
       <div>
-        <h1>homepage</h1>
+        <div>
+          {this.state.topRatedList["results"].map((item) => (
+            <div>
+              <h1>{item.title}</h1>
+            </div>
+          ))}
+        </div>
       </div>
     );
   }
