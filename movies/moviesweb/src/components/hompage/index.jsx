@@ -44,13 +44,15 @@ class Homepage extends Component {
                 <div className="card" key={item.id}>
                   <img src={`${img_base}/${item.poster_path}`} alt="" />
                   <div className="card-body">
-                    <h5>Title</h5>
+                    <h5>{item.title}</h5>
                     <p>
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
                       Laudantium suscipit incidunt, dolorem praesentium esse
                       repudiandae. Quis earum eligendi ducimus cumque.
                     </p>
-                    <div className="rating">9.0</div>
+                    <div className="rating">
+                      <span>9.0</span>
+                    </div>
                   </div>
                 </div>
               ))}

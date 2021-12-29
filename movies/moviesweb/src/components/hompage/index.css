@@ -55,7 +55,23 @@
 
 .card-body h5 {
     font-size: 1.2rem;
-    /* font */
+    font-family: monospace;
+}
+
+.card-body p {
+    font-size: 0.7rem;
+    font-family: Helvetica;
+    font-weight: 700;
+}
+
+.card-body .rating {
+    font-size: 0.5rem;
+    font-family: Helvetica;
+    font-weight: 700;
+    width: inherit;
+    display: flex;
+    align-items: flex-end;
+    /* background-color: aqua; */
 }
 
 .card img {
