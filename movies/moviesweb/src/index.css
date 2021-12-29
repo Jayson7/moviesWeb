@@ -5,4 +5,5 @@ body {
     -moz-osx-font-smoothing: grayscale;
     overflow-x: hidden;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
