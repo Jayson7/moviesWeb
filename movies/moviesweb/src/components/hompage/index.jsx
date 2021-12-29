@@ -4,7 +4,8 @@ class Homepage extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      topRatedList: [],
+      toprated: [],
+      toprated_results: [],
       popularList: [],
       // items: [],
       // iid: {},
@@ -26,17 +27,19 @@ class Homepage extends Component {
     fetch(top_rated)
       .then((res) => res.json())
       .then((data) => {
-        this.setState({ topRatedList: data });
-        console.log(this.state.topRatedList);
+        this.setState({ toprated: data });
+        this.setState({ toprated_results: data.results });
+        console.log(this.state.toprated);
+        console.log(this.state.toprated_results);
       });
   };
   render() {
     return (
       <div>
         <div>
-          {this.state.topRatedList["results"].map((item) => (
-            <div>
-              <h1>{item.title}</h1>
+          {this.state.toprated_results.map((item) => (
+            <div key={item.id}>
+              <h6>{item.title}</h6>
             </div>
           ))}
         </div>
