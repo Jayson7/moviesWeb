@@ -38,20 +38,16 @@ class Homepage extends Component {
       <div>
         <div className="section1">
           <div className="top-rated">
-            <h3>Top Rated</h3>
+            <h1>Top Rated</h1>
             <div className="card-container">
               {this.state.toprated_results.map((item) => (
                 <div className="card" key={item.id}>
                   <img src={`${img_base}/${item.poster_path}`} alt="" />
                   <div className="card-body">
-                    <h5>{item.title}</h5>
-                    <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Laudantium suscipit incidunt, dolorem praesentium esse
-                      repudiandae. Quis earum eligendi ducimus cumque.
-                    </p>
+                    <h4>{item.title}</h4>
+                    <p>{item.overview.slice(0, 250)}</p>
                     <div className="rating">
-                      <span>9.0</span>
+                      <span>{item.vote_average}</span>
                     </div>
                   </div>
                 </div>
