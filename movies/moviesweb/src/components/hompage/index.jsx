@@ -23,7 +23,7 @@ class Homepage extends Component {
     const page = "page=1";
     const top_rated =
       base_url + "/movie/top_rated?" + api_key + "&language=en-US&" + page;
-
+    const img_base = "https://image.tmdb.org/t/p/w500";
     fetch(top_rated)
       .then((res) => res.json())
       .then((data) => {
