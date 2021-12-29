@@ -2,9 +2,10 @@ import React from "react";
 import "./index.css";
 
 function Homepage() {
+  const api_key = 
   return (
     <div>
-      <h1>Homepage </h1>
+      
     </div>
   );
 }
