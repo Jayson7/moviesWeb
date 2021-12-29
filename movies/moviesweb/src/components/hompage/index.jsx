@@ -39,7 +39,9 @@ class Homepage extends Component {
         <div>
           {this.state.toprated_results.map((item) => (
             <div key={item.id}>
-              <h6>{item.title}</h6>
+              <div className="card-container">
+
+              </div>
             </div>
           ))}
         </div>
