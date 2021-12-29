@@ -19,14 +19,15 @@ class Homepage extends Component {
   refreshList = () => {
     const api_key = "api_key=7768d9b2e7b144c9996e688064e2b36d";
     const base_url = "https://api.themoviedb.org/3";
-    const page = "page=4";
+    const page = "page=1";
     const top_rated =
       base_url + "/movie/top_rated?" + api_key + "&language=en-US&" + page;
 
     fetch(top_rated)
       .then((res) => res.json())
       .then((data) => {
-        console.log(data);
+        this.setState({ top_rated: data });
+        console.log(this.state.top_rated);
       });
   };
   render() {
