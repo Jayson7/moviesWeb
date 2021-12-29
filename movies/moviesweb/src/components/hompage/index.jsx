@@ -50,9 +50,8 @@ class Homepage extends Component {
                       Laudantium suscipit incidunt, dolorem praesentium esse
                       repudiandae. Quis earum eligendi ducimus cumque.
                     </p>
+                    <div className="rating">9.0</div>
                   </div>
-
-                  <div className="rating">9.0</div>
                 </div>
               ))}
             </div>
