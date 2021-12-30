@@ -4,7 +4,7 @@ header {
     height: 50px;
 }
 
-nav {
+.nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -74,4 +74,10 @@ form button:hover {
     font-weight: 900;
     color: rgb(15, 54, 15);
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+@media screen and (max-width: 814px) {
+    .nav {
+        display: none;
+    }
 }
