@@ -10,7 +10,7 @@ class Navbar extends Component {
           </h6>
         </div>
         <header>
-          <nav>
+          <nav className="nav">
             <ul>
               <li>
                 <a href="/"> Home </a>
