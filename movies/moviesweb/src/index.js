@@ -3,13 +3,12 @@ import React from "react";
 import "./index.css";
 import Homepage from "./components/hompage/index";
 import Navbars from "./components/navbar/navbar.jsx";
-import Popular from "./components/popular/popular";
+// import Popular from "./components/popular/popular";
 
 ReactDOM.render(
   <React.StrictMode>
     <Navbars />
-    <Homepage />
-    <Popular />
+    <Homepage /> {/* <Popular /> */}
   </React.StrictMode>,
   document.getElementById("root")
 );
