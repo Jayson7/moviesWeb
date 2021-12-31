@@ -5,8 +5,8 @@ class Popular extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      toprated: [],
-      toprated_results: [],
+      popular: [],
+      popular_results: [],
       popularList: [],
       // items: [],
       // iid: {},
@@ -28,10 +28,10 @@ class Popular extends Component {
     fetch(top_rated)
       .then((res) => res.json())
       .then((data) => {
-        this.setState({ toprated: data });
-        this.setState({ toprated_results: data.results });
-        console.log(this.state.toprated);
-        console.log(this.state.toprated_results);
+        this.setState({ popular: data });
+        this.setState({ popular_results: data.results });
+        console.log(this.state.popular);
+        console.log(this.state.popular_results);
       });
   };
   render() {
@@ -40,9 +40,9 @@ class Popular extends Component {
       <div>
         <div className="section1">
           <div className="top-rated">
-            <h1>Discover</h1>
+            <h1>Discover </h1>
             <div className="card-container">
-              {this.state.toprated_results.map((item) => (
+              {this.state.popular_results.map((item) => (
                 <div className="cards" key={item.id}>
                   <img src={`${img_base}/${item.poster_path}`} alt="" />
                   <div className="card-bodys">
