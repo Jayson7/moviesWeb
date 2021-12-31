@@ -1,13 +1,15 @@
-import React from "react";
 import ReactDOM from "react-dom";
+import React from "react";
 import "./index.css";
 import Homepage from "./components/hompage/index";
-import Navbar from "./components/navbar/navbar";
+import Navbars from "./components/navbar/navbar.jsx";
+import Popular from "./components/popular/popular";
 
 ReactDOM.render(
   <React.StrictMode>
-    <Navbar />
+    <Navbars />
     <Homepage />
+    <Popular />
   </React.StrictMode>,
   document.getElementById("root")
 );

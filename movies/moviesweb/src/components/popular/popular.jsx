@@ -1,6 +1,7 @@
 import React, { Component } from "react";
-import "./index.css";
-class Homepage extends Component {
+
+import "./popular.css";
+class Popular extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -20,9 +21,10 @@ class Homepage extends Component {
   refreshList = () => {
     const api_key = "api_key=7768d9b2e7b144c9996e688064e2b36d";
     const base_url = "https://api.themoviedb.org/3";
-    const page = "page=1";
+    const other =
+      "sort_by=popularity.desc&include_adult=true&include_video=false&page=1&with_watch_monetization_types=flatrate";
     const top_rated =
-      base_url + "/movie/top_rated?" + api_key + "&language=en-US&" + page;
+      base_url + "/discover/movie?" + api_key + "&language=en-US&" + other;
     fetch(top_rated)
       .then((res) => res.json())
       .then((data) => {
@@ -38,7 +40,7 @@ class Homepage extends Component {
       <div>
         <div className="section1">
           <div className="top-rated">
-            <h1>Top Rated</h1>
+            <h1>Discover</h1>
             <div className="card-container">
               {this.state.toprated_results.map((item) => (
                 <div className="cards" key={item.id}>
@@ -60,4 +62,4 @@ class Homepage extends Component {
   }
 }
 
-export default Homepage;
+export default Popular;
