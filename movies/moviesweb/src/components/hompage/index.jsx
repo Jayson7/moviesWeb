@@ -6,7 +6,7 @@ class Homepage extends Component {
     this.state = {
       toprated: [],
       toprated_results: [],
-      popularList: [],
+
     };
   }
 
