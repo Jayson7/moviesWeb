@@ -24,17 +24,15 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .cards {
-    width: 300px;
-    height: 400px;
+    width: 200px;
+    height: 200px;
     background-color: none;
     margin: 10px;
-    position: relative;
     display: flex;
-    transition: all 2s ease-in-out;
     align-items: center;
     justify-content: center;
     flex-direction: column;
