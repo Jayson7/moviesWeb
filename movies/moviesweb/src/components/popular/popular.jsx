@@ -8,8 +8,7 @@ class Popular extends Component {
       popular: [],
       popular_results: [],
       popularList: [],
-      // items: [],
-      // iid: {},
+  
     };
   }
 

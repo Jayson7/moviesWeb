@@ -7,8 +7,6 @@ class Homepage extends Component {
       toprated: [],
       toprated_results: [],
       popularList: [],
-      // items: [],
-      // iid: {},
     };
   }
 
