@@ -40,8 +40,8 @@ class Navbars extends Component {
                     </a>
                   </li>
                   <li className="nav-item ">
-                    <a className="nav-link" href="/popular">
-                      Tv shows
+                    <a className="nav-link" href="/">
+                      Tv Shows
                     </a>
                   </li>
                 </ul>
