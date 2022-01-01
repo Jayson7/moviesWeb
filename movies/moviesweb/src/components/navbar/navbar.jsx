@@ -69,7 +69,7 @@ class Navbars extends Component {
               <Route exact path="/popular" element={<Popular />} />
             </Routes>
 
-            {/* routers ends here */}
+            {/* routes ends here */}
           </Router>
         </header>
       </div>
