@@ -8,6 +8,7 @@
     display: grid;
     background-color: rgb(170, 89, 89);
     height: 100%;
+    width: 100%;
 }
 
 .top-rated h1 {
