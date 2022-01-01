@@ -19,6 +19,8 @@
     font-weight: 900;
 }
 
+
+/* 
 .card-container {
     display: flex;
     position: relative;
@@ -38,8 +40,10 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-}
+} */
 
+
+/* 
 .card-bodys {
     position: relative;
     border-radius: 10px;
@@ -61,15 +65,17 @@
     text-align: center;
     margin: 10px 0 10px 0;
     font-family: monospace;
-}
+} */
 
-.card-bodys p {
+
+/* .card-bodys p {
     font-size: 0.8rem;
     font-family: Helvetica;
     font-weight: 500;
-}
+} */
 
-.card-bodys .rating {
+
+/* .card-bodys .rating {
     font-size: 0.5rem;
     font-family: Helvetica;
     font-weight: 700;
@@ -78,10 +84,11 @@
     align-items: center;
     justify-content: flex-end;
     margin-top: 10px;
-    /* background-color: aqua; */
-}
 
-.card-bodys span {
+} */
+
+
+/* .card-bodys span {
     background-color: green;
     font-size: 1rem;
     border-radius: 10px;
@@ -99,4 +106,4 @@
 .cards:hover .card-bodys {
     display: flex;
     transition: all 5s ease-in-out;
-}
+} */
