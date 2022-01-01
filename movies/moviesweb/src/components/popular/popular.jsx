@@ -47,7 +47,7 @@ class Popular extends Component {
                   <img src={`${img_base}/${item.poster_path}`} alt="" />
                   <div className="card-bodys">
                     <h4>{item.title}</h4>
-                    <p>{item.overview.slice(0, 250)}</p>
+                    <p>{item.overview.slice(0, 270)}</p>
                     <div className="rating">
                       <span>{item.vote_average}</span>
                     </div>
