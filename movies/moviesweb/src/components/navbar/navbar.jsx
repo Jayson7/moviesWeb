@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import "./navbar.css";
+import Popular from "../popular/popular";
+import Homepage from "../hompage/index";
 
 class Navbars extends Component {
   render() {
@@ -28,34 +30,19 @@ class Navbars extends Component {
               <div className="collapse navbar-collapse" id="collapsibleNavId">
                 <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
                   <li className="nav-item ">
-                    <a className="nav-link" href="/">
+                    <Link className="nav-link" to="/ ">
                       Home
-                    </a>
+                    </Link>
                   </li>
                   <li className="nav-item">
-                    <a className="nav-link" href="/">
-                      Link
+                    <a className="nav-link" href="/popular">
+                      Popular movies
                     </a>
                   </li>
-                  <li className="nav-item dropdown">
-                    <a
-                      className="nav-link dropdown-toggle"
-                      href="/"
-                      id="dropdownId"
-                      data-toggle="dropdown"
-                      aria-haspopup="true"
-                      aria-expanded="false"
-                    >
-                      Dropdown
+                  <li className="nav-item ">
+                    <a className="nav-link" href="/popular">
+                      Tv shows
                     </a>
-                    <div className="dropdown-menu" aria-labelledby="dropdownId">
-                      <a className="dropdown-item" href="/">
-                        Action 1
-                      </a>
-                      <a className="dropdown-item" href="/">
-                        Action 2
-                      </a>
-                    </div>
                   </li>
                 </ul>
                 <form className="form-inline my-2 my-lg-0">
@@ -73,6 +60,16 @@ class Navbars extends Component {
                 </form>
               </div>
             </nav>
+
+            {/* routes   starts here*/}
+
+            <Routes>
+              <Route exact path="/" element={<Homepage />} />
+
+              <Route exact path="/popular" element={<Popular />} />
+            </Routes>
+
+            {/* routers ends here */}
           </Router>
         </header>
       </div>
