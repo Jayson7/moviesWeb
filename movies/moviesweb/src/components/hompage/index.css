@@ -104,7 +104,6 @@
 
 .cards:hover .card-bodys h4 {
     font-size: 1.5rem;
-    display: none;
     text-align: center;
     margin: 10px 0 10px 0;
     font-family: monospace;
