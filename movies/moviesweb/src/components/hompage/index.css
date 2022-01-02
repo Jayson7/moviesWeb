@@ -41,7 +41,7 @@
     border-radius: 10px;
     position: absolute;
     margin: -70px 0 0 0;
-    display: none;
+    display: flex;
     flex-direction: column;
     width: 250px;
     height: auto;
@@ -55,6 +55,7 @@
 
 .card-bodys h4 {
     font-size: 1.5rem;
+    display: none;
     text-align: center;
     margin: 10px 0 10px 0;
     font-family: monospace;
@@ -62,6 +63,7 @@
 
 .card-bodys p {
     font-size: 0.8rem;
+    display: none;
     font-family: Helvetica;
     font-weight: 500;
 }
@@ -70,6 +72,7 @@
     font-size: 0.5rem;
     font-family: Helvetica;
     font-weight: 700;
+    display: none;
     width: inherit;
     display: flex;
     align-items: center;
@@ -80,6 +83,7 @@
 .card-bodys span {
     background-color: green;
     font-size: 1rem;
+    display: none;
     border-radius: 10px;
     padding: 4px;
 }
@@ -96,4 +100,39 @@
     margin: 0 0 -100px 0;
     display: flex;
     transition: margin 1s ease-in-out;
+}
+
+.card-bodys h4 {
+    font-size: 1.5rem;
+    display: none;
+    text-align: center;
+    margin: 10px 0 10px 0;
+    font-family: monospace;
+}
+
+.card-bodys p {
+    font-size: 0.8rem;
+    display: none;
+    font-family: Helvetica;
+    font-weight: 500;
+}
+
+.card-bodys .rating {
+    font-size: 0.5rem;
+    font-family: Helvetica;
+    font-weight: 700;
+    display: none;
+    width: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 10px;
+}
+
+.card-bodys span {
+    background-color: green;
+    font-size: 1rem;
+    display: none;
+    border-radius: 10px;
+    padding: 4px;
 }
