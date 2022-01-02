@@ -100,9 +100,9 @@
     margin: 0 0 -100px 0;
     width: 250px;
     transition: width 2s ease-in-out;
-    background-color: rgba(0, 0, 0, 1);
+    /* background-color: rgba(0, 0, 0, 1); */
     transition: margin 3s ease-in-out;
-    transition: background 0.9s ease-in-out;
+    /* transition: background 0.9s ease-in-out; */
 }
 
 .cards:hover .card-bodys h4 {
