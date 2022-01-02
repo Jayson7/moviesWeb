@@ -30,7 +30,7 @@
 .cards {
     width: 300px;
     height: 400px;
-    background-color: #fff;
+    /* background-color: #fff; */
     margin: 10px;
     display: flex;
     align-items: center;
@@ -40,7 +40,8 @@
 .card-bodys {
     border-radius: 10px;
     position: absolute;
-    display: none;
+    margin: -70px 0 0 0;
+    display: flex;
     flex-direction: column;
     width: 250px;
     height: auto;
@@ -91,6 +92,7 @@
 }
 
 .cards:hover .card-bodys {
+    margin: 0 0 -100px 0;
     display: flex;
-    transition: all 5s ease-in-out;
+    transition: margin 1s ease-in-out;
 }
