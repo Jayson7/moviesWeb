@@ -112,7 +112,6 @@
 
 .cards:hover .card-bodys p {
     font-size: 0.8rem;
-    display: none;
     font-family: Helvetica;
     font-weight: 500;
 }
