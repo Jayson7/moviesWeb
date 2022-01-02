@@ -43,10 +43,11 @@
     margin: -70px 0 0 0;
     display: flex;
     flex-direction: column;
-    width: 250px;
+    width: 0px;
     height: auto;
     align-items: center;
     transition: margin 2s ease-in-out;
+    transition: width 0.5s ease-in-out;
     justify-content: center;
     background-color: rgba(0, 0, 0, 1);
     padding: 8px;
@@ -74,7 +75,6 @@
     font-weight: 700;
     display: none;
     width: inherit;
-    display: flex;
     align-items: center;
     justify-content: flex-end;
     margin-top: 10px;
@@ -98,19 +98,24 @@
 
 .cards:hover .card-bodys {
     margin: 0 0 -100px 0;
-    display: flex;
-    transition: margin 1s ease-in-out;
+    width: 250px;
+    transition: width 2s ease-in-out;
+    background-color: rgba(0, 0, 0, 1);
+    transition: margin 3s ease-in-out;
+    transition: background 0.9s ease-in-out;
 }
 
 .cards:hover .card-bodys h4 {
     font-size: 1.5rem;
     text-align: center;
+    display: flex;
     margin: 10px 0 10px 0;
     font-family: monospace;
 }
 
 .cards:hover .card-bodys p {
     font-size: 0.8rem;
+    display: flex;
     font-family: Helvetica;
     font-weight: 500;
 }
@@ -119,6 +124,7 @@
     font-size: 0.5rem;
     font-family: Helvetica;
     font-weight: 700;
+    display: flex;
     width: inherit;
     display: flex;
     align-items: center;
@@ -130,5 +136,6 @@
     background-color: green;
     font-size: 1rem;
     border-radius: 10px;
+    display: flex;
     padding: 4px;
 }
